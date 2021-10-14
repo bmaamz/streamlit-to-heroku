@@ -1,5 +1,5 @@
 streamlit
 plotly>=4.3.1
 pandas>=0.19
-Pillow>+7.3.2
-xlrd<2.0
+Pillow>=7.3.2
+xlrd<=3.0
