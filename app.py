@@ -2,10 +2,14 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 from PIL import Image
+import xlrd
 
 st.set_page_config(page_title='Component Knowledge Tracker')
 st.header('Component Knowledge Tracker')
 st.subheader('--Demo--')
+
+xlrd.xlsx.ensure_elementtree_imported(False, None)
+xlrd.xlsx.Element_has_iter = True
 
 ### --- LOAD DATAFRAME
 excel_file = 'Book.xlsx'
